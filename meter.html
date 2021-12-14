@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Register User</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            meter {
+                width: 50%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <form>
+            <fieldset>
+                <legend>Password Strength</legend>
+                <dl>
+                    <dt>Normal</dt>
+                    <dd><meter></meter></dd>
+                    <dt>80%</dt>
+                    <dd><meter min="1" max="100" value="80"></meter></dd>
+                    <dt>Weak Password</dt>
+                    <dd> <meter min="1" max="100" low="40" high="80" value="100"></meter> </dd>
+                    <dt>Poor Password</dt>
+                    <dd>
+                        <meter min="1" max="100" value="100" low="60" high="80" ></meter>
+                    </dd>
+                </dl>
+            </fieldset>
+        </form>
+       
+    </body>
+</html>
